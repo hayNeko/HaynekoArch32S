@@ -3,8 +3,16 @@
 #include <iostream>
 #include <string>
 
-#define print(msg) std::cout << (msg) << std::endl;
-#define error(msg) std::cerr << (msg) << std::endl;
+#define print(msg) std::cout << "[General] " << (msg) << std::endl;
+#define warn(msg)  std::cout << "[Warning] " << (msg) << std::endl;
+#define error(msg) std::cerr << "[Error] " << (msg) << std::endl;
+
+// macro
+
+#define VM_CPU_DISABLE_PROTECTION_MODE
+#define VM_MEM_CREATE_NO_WARNING
+
+// end macro
 
 typedef unsigned char           byte;
 typedef unsigned short          word;
@@ -20,6 +28,16 @@ constexpr word  WORD_SIGN     = 0x8000;
 constexpr dword DWORD_SIGN    = 0x80000000;
 constexpr qword QWORD_SIGN    = 0x8000000000000000;
 
+// placeholder arguments for override functions
+/*
+char Function(int arg1, char) return (char)1; <- Function(1, CHAR_ARGV) to get char return value
+int Function(int arg1, int) return (int)1;    <- Function(1, INT_ARGV) to get int return value
+*/
+constexpr byte  BYTE_ARGV     = 0x0F;
+constexpr word  WORD_ARGV     = 0x0F0F;
+constexpr dword DWORD_ARGV    = 0x0F0F0F0F;
+constexpr qword QWORD_ARGV    = 0x0F0F0F0F0F0F0F0F;
+
 
 typedef dword                   maxsize;
 
@@ -30,10 +48,7 @@ typedef qword                   regq;
 
 typedef dword                   ctrlreg;
 
-typedef byte                    addrb;
-typedef word                    addrw;
-typedef dword                   addrd;
-typedef qword                   addrq;
+typedef dword                   addr;
 
 typedef byte                    dispb;
 typedef word                    dispw;

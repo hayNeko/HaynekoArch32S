@@ -24,6 +24,18 @@
     <ClCompile Include="vmmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="vmport.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vminst.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vmcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vmcpu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vmreg.hpp">
