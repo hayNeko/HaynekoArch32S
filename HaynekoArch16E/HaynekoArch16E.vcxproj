@@ -19,10 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="vmmain.cpp" />
+    <ClCompile Include="vmmem.cpp" />
     <ClCompile Include="vmreg.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="general.hpp" />
+    <ClInclude Include="vmmem.hpp" />
     <ClInclude Include="vmreg.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -2,11 +2,12 @@
 
 #include "general.hpp"
 
-class Register {
+class VMMem {
 public:
 
 protected:
 
 private:
-	
+	byte *mem_ptr;
+	dword mem_size;
 };

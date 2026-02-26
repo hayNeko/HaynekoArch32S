@@ -18,12 +18,21 @@
     <ClCompile Include="vmreg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="vmmem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vmmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vmreg.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="general.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vmmem.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
