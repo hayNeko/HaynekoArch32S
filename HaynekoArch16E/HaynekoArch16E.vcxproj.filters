@@ -36,6 +36,12 @@
     <ClCompile Include="vmcpu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="vminstphsr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vmflag.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vmreg.hpp">
@@ -45,6 +51,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="vmmem.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vminstphsr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vmflag.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

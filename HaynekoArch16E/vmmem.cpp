@@ -4,7 +4,7 @@
 #include "general.hpp"
 
 VMMem::VMMem(dword mem_size) : mem_size(mem_size)  {
-	#ifndef VM_MEM_CREATE_NO_WARNING
+	#ifndef VMMEM_CREATE_NO_WARNING
 	if ( mem_size >= 1048576 )
 		warn( "VMMem size is too large, it may cause performance issues" );
 	#endif

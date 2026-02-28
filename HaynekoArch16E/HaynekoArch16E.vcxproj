@@ -21,7 +21,9 @@
   <ItemGroup>
     <ClCompile Include="vmcore.cpp" />
     <ClCompile Include="vmcpu.cpp" />
+    <ClCompile Include="vmflag.cpp" />
     <ClCompile Include="vminst.cpp" />
+    <ClCompile Include="vminstphsr.cpp" />
     <ClCompile Include="vmmain.cpp" />
     <ClCompile Include="vmmem.cpp" />
     <ClCompile Include="vmport.cpp" />
@@ -29,6 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="general.hpp" />
+    <ClInclude Include="vmflag.hpp" />
+    <ClInclude Include="vminstphsr.hpp" />
     <ClInclude Include="vmmem.hpp" />
     <ClInclude Include="vmreg.hpp" />
   </ItemGroup>

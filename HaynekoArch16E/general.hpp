@@ -37,6 +37,7 @@ constexpr qword QWORD_SIGN    = 0x8000000000000000;
 char Function(int arg1, char) return (char)1; <- Function(1, CHAR_ARGV) to get char return value
 int Function(int arg1, int) return (int)1;    <- Function(1, INT_ARGV) to get int return value
 */
+
 constexpr byte  BYTE_ARGV     = 0x0F;
 constexpr word  WORD_ARGV     = 0x0F0F;
 constexpr dword DWORD_ARGV    = 0x0F0F0F0F;
@@ -65,6 +66,8 @@ typedef dword                   immd;
 typedef qword                   immq;
 
 typedef dword                   flag;
+
+typedef byte                    factor;
 
 
 // ### FUNCTIONS ###
@@ -127,4 +130,23 @@ inline void clearBit( dword &res, byte bit_pos ) {
 
 inline void toggleBit( dword &res, byte bit_pos ) {
 	res ^= ( 1 << bit_pos );
+}
+
+// tool
+
+inline dword random( dword seed ) {
+	dword ans = ( seed ^ 0x39DF307E + 1 ) >> ( seed & 0x07 + 1 );
+	for ( byte i = 0; i <= ( (byte)( seed ^ 0x39 ) ); ++i ) {
+		ans ^= ( ~( i << 2 ) + 0x16 ) * ( i << 2 + 1 ) - ( ( i << 8 ) | ( seed % 16 ) );
+		ans += (dword)( ~( seed & 0x3900005B - i * 8 ) >> 3 );
+	}
+	return ans;
+}
+
+inline dword randoms( dword seed, byte times ) {
+	dword ans = 0;
+	for ( byte i = 0; i <= times + 1; ++i ) {
+		ans += random( seed );
+	}
+	return ans;
 }
