@@ -3,7 +3,23 @@
 #include <iostream>
 #include <string>
 
-#define VM_VERSION 1
+#define VM_VERSION 3
+
+// status code
+constexpr int VM_PROCESS_EXIT_CODE_SUCCESS = 0;
+constexpr int VM_PROCESS_EXIT_CODE_FAILURE = 1;
+constexpr int VM_PROCESS_EXIT_CODE_ABORT = 2;
+constexpr int VM_INPUT_EXECUTABLE_CANNOT_FIND = 3;
+constexpr int VM_INPUT_EXECUTABLE_CANNOT_OPEN = 4;
+constexpr int VM_INPUT_EXECUTABLE_INVALID_FORMAT = 5;
+constexpr int VM_RUNTIME_EXTERNAL_INTERRUPT = 7;
+constexpr int VM_RUNTIME_MEMORY_OVERFLOW = 8;
+constexpr int VM_RUNTIME_INVALID_INSTRUCTION = 9;
+constexpr int VM_RUNTIME_INVALID_MEMORY_ACCESS = 10; // only in PROTECTION_MODE
+constexpr int VM_RUNTIME_DEREFERENCE_NULL_POINTER = 11; // only in PROTECTION_MODE
+constexpr int VM_RUNTIME_DIVISION_BY_ZERO = 12;
+constexpr int VM_DIE = -1;
+
 
 #define print(msg) std::cout << "[General] " << (msg) << std::endl;
 #define warn(msg)  std::cout << "[Warning] " << (msg) << std::endl;
