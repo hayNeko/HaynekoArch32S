@@ -15,48 +15,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vmreg.cpp">
+    <ClCompile Include="vmcore\vmreg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmmem.cpp">
+    <ClCompile Include="vmcore\vmmem.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmmain.cpp">
+    <ClCompile Include="vmcore\vmmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmport.cpp">
+    <ClCompile Include="vmcore\vmport.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vminst.cpp">
+    <ClCompile Include="vmcore\vminst.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmcore.cpp">
+    <ClCompile Include="vmcore\vmcore.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmcpu.cpp">
+    <ClCompile Include="vmcore\vmcpu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vminstphsr.cpp">
+    <ClCompile Include="vmcore\vminstphsr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmflag.cpp">
+    <ClCompile Include="vmcore\vmflag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vmreg.hpp">
+    <ClInclude Include="headers\vmreg.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="general.hpp">
+    <ClInclude Include="headers\general.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="vmmem.hpp">
+    <ClInclude Include="headers\vmmem.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="vminstphsr.hpp">
+    <ClInclude Include="headers\vminstphsr.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="vmflag.hpp">
+    <ClInclude Include="headers\vmflag.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

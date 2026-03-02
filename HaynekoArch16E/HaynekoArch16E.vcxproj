@@ -19,22 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vmcore.cpp" />
-    <ClCompile Include="vmcpu.cpp" />
-    <ClCompile Include="vmflag.cpp" />
-    <ClCompile Include="vminst.cpp" />
-    <ClCompile Include="vminstphsr.cpp" />
-    <ClCompile Include="vmmain.cpp" />
-    <ClCompile Include="vmmem.cpp" />
-    <ClCompile Include="vmport.cpp" />
-    <ClCompile Include="vmreg.cpp" />
+    <ClCompile Include="vmcore\vmcore.cpp" />
+    <ClCompile Include="vmcore\vmcpu.cpp" />
+    <ClCompile Include="vmcore\vmflag.cpp" />
+    <ClCompile Include="vmcore\vminst.cpp" />
+    <ClCompile Include="vmcore\vminstphsr.cpp" />
+    <ClCompile Include="vmcore\vmmain.cpp" />
+    <ClCompile Include="vmcore\vmmem.cpp" />
+    <ClCompile Include="vmcore\vmport.cpp" />
+    <ClCompile Include="vmcore\vmreg.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="general.hpp" />
-    <ClInclude Include="vmflag.hpp" />
-    <ClInclude Include="vminstphsr.hpp" />
-    <ClInclude Include="vmmem.hpp" />
-    <ClInclude Include="vmreg.hpp" />
+    <ClInclude Include="headers\general.hpp" />
+    <ClInclude Include="headers\vmflag.hpp" />
+    <ClInclude Include="headers\vminstphsr.hpp" />
+    <ClInclude Include="headers\vmmem.hpp" />
+    <ClInclude Include="headers\vmreg.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
