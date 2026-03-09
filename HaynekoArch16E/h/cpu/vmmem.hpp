@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef HA32S_H_VMMEM_
+#define HA32S_H_VMMEM_
 #include <string>
 
 #include "general.hpp"
@@ -27,3 +27,5 @@ protected:
 	byte *mem_ptr;
 	dword mem_size;
 };
+
+#endif // HA32S_H_VMMEM_

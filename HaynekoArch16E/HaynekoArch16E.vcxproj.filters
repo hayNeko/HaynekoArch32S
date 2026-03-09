@@ -30,9 +30,6 @@
     <ClCompile Include="vmcore\cpu\vminst.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmcore\vmcore.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="vmcore\cpu\vmcpu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -69,6 +66,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="h\cpu\vminstprefix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="h\vm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="h\cpu\vmport.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

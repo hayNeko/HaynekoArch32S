@@ -1,4 +1,5 @@
-#pragma once
+#ifndef HA32S_H_VMREG_
+#define HA32S_H_VMREG_
 
 #include "general.hpp"
 
@@ -8,7 +9,6 @@ public:
 protected:
 
 private:
-
 };
 
 class FloatPtRegister {
@@ -17,7 +17,6 @@ public:
 protected:
 
 private:
-
 };
 
 class IP: public Register {
@@ -32,7 +31,7 @@ protected:
 	volatile regd ip;
 };
 
-class alignas(32) GPR: public Register {
+class alignas( 32 ) GPR: public Register {
 public:
 	GPR();
 
@@ -53,3 +52,5 @@ public:
 protected:
 	regd crs[4];
 };
+
+#endif // HA32S_H_VMREG_

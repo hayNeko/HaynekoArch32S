@@ -1,4 +1,5 @@
-#pragma once
+#ifndef HA32S_H_VMINSTPHSR_
+#define HA32S_H_VMINSTPHSR_
 
 #include "h/general.hpp"
 #include "cpu/vminstphsr.hpp"
@@ -12,5 +13,6 @@
 // many of instruction is 2-operand instruction ( a = a OP b ) but not 3-operand instruction ( a = b OP c )
 class InstParser {
 public:
-	
 };
+
+#endif // HA32S_H_VMINSTPHSR_

@@ -44,10 +44,14 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"SR1", "SR2"
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -74,7 +78,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "0x0"
+					"DRG",
+					"0x0"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -103,20 +108,21 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"A16"
+					"O16"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
 				"mode": "L0",
 				"can_use_with_prefixes": [],
-				"description": "Call near - Calls the subroutine at the specified 2 byte address."
+				"description": "Call near - Calls the subroutine at the specified 2 byte offset."
 			},
 			"CALLR": {
 				"opcode": "0x0A",
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "0x0"
+					"DRG",
+					"0x0"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -144,7 +150,8 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"I32"
 				],
 				"modify_flags": [],
@@ -159,7 +166,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"IM8"
 				],
 				"modify_flags": [],
@@ -174,7 +182,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"IM8"
 				],
 				"modify_flags": [],
@@ -188,7 +197,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"OF8"
 				],
 				"modify_flags": [],
@@ -204,8 +214,10 @@
 				"length": 4,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
-					"SCL", "SR2",
+					"DRG",
+					"SR1",
+					"SCL",
+					"SR2",
 					"OF8"
 				],
 				"modify_flags": [],
@@ -245,7 +257,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "0x0"
+					"DRG",
+					"0x0"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -262,7 +275,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SOP"
+					"DRG",
+					"SOP"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -276,8 +290,10 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -291,8 +307,10 @@
 				"length": 4,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"IM8"
 				],
 				"modify_flags": [],
@@ -307,8 +325,10 @@
 				"length": 5,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"I16"
 				],
 				"modify_flags": [],
@@ -323,7 +343,8 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"I32"
 				],
 				"modify_flags": [],
@@ -338,8 +359,10 @@
 				"length": 7,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"I32"
 				],
 				"modify_flags": [],
@@ -354,8 +377,10 @@
 				"length": 8,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"OF8",
 					"I32"
 				],
@@ -371,8 +396,10 @@
 				"length": 9,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"O16",
 					"I32"
 				],
@@ -388,7 +415,8 @@
 				"length": 10,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"O32",
 					"I32"
 				],
@@ -404,8 +432,10 @@
 				"length": 11,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"O32",
 					"I32"
 				],
@@ -421,8 +451,10 @@
 				"length": 12,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"PRT",
 					"O32",
 					"I32"
@@ -439,8 +471,10 @@
 				"length": 13,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"PRT",
 					"O16",
 					"I32"
@@ -457,13 +491,15 @@
 				"length": 14,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"PRT",
 					"A16",
 					"I32",
 					"O32"
-					
+
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -477,8 +513,10 @@
 				"length": 15,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2",
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2",
 					"A32",
 					"I32",
 					"O32"
@@ -489,7 +527,6 @@
 				"can_use_with_prefixes": [],
 				"description": "No Operation 15 - Does nothing for one instruction cycle, or occupies 15 bytes in the instruction stream for alignment."
 			}
-			
 		},
 		"stack": {
 			"PUSH ra": {
@@ -667,7 +704,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"0x0", "SOP",
+					"0x0",
+					"SOP",
 					"IM8"
 				],
 				"modify_flags": [],
@@ -723,7 +761,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"0x0", "SOP",
+					"0x0",
+					"SOP",
 					"IM16"
 				],
 				"modify_flags": [],
@@ -741,7 +780,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SOP"
+					"DRG",
+					"SOP"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -757,7 +797,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SOP"
+					"DRG",
+					"SOP"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -774,7 +815,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"0x0", "SOP"
+					"0x0",
+					"SOP"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -788,7 +830,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"0x0", "SOP"
+					"0x0",
+					"SOP"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -802,7 +845,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"0x0", "SOP"
+					"0x0",
+					"SOP"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -816,7 +860,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"OF8"
 				],
 				"modify_flags": [],
@@ -833,7 +878,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"OF8"
 				],
 				"modify_flags": [],
@@ -850,7 +896,8 @@
 				"length": 4,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"OF16"
 				],
 				"modify_flags": [],
@@ -867,7 +914,8 @@
 				"length": 4,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
+					"DRG",
+					"SOP",
 					"OF16"
 				],
 				"modify_flags": [],
@@ -885,8 +933,10 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"SR1", "SOP",
-					"SR2", "SR3"
+					"SR1",
+					"SOP",
+					"SR2",
+					"SR3"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -902,8 +952,10 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -913,7 +965,6 @@
 				],
 				"description": "Pop triple register - Pops the top three values from the stack into the destination registers in order: SR1, SR2, SR3."
 			}
-			
 		},
 		"arithmetic": {
 			"ADD": {
@@ -921,11 +972,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "0x0",
-					"SR1", "SR2"
+					"DRG",
+					"0x0",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -939,11 +995,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "0x0",
-					"SR1", "SR2"
+					"DRG",
+					"0x0",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -957,10 +1018,14 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -974,10 +1039,14 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -991,10 +1060,14 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1008,10 +1081,14 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1027,7 +1104,10 @@
 					"OPC"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1043,7 +1123,10 @@
 					"OPC"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1057,11 +1140,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1075,11 +1162,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1093,11 +1184,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1111,11 +1206,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1130,11 +1229,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
-					"SR2", "SR3"
+					"DRG",
+					"SR1",
+					"SR2",
+					"SR3"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1148,11 +1252,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
-					"SR2", "SR3"
+					"DRG",
+					"SR1",
+					"SR2",
+					"SR3"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1166,11 +1275,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
-					"SR2", "SR3"
+					"DRG",
+					"SR1",
+					"SR2",
+					"SR3"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1184,11 +1298,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
-					"SR2", "SR3"
+					"DRG",
+					"SR1",
+					"SR2",
+					"SR3"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1209,7 +1328,6 @@
 				"can_use_with_prefixes": [],
 				"description": "Random Number Generator - Generates a random number and stores it in the RD register."
 			}
-
 		},
 		"logic": {
 			"XOR": {
@@ -1218,11 +1336,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1237,11 +1360,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1256,11 +1384,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1274,10 +1407,14 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG","SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1292,11 +1429,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1311,11 +1453,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1330,11 +1477,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "SR2"
+					"DRG",
+					"SOP",
+					"SR1",
+					"SR2"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1349,11 +1501,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1367,11 +1523,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1385,11 +1545,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1403,11 +1567,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1421,11 +1589,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1439,11 +1611,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1458,11 +1634,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1476,11 +1656,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1494,11 +1678,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1512,11 +1700,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1530,11 +1722,15 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"IM8"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1550,7 +1746,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -1566,7 +1763,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -1582,7 +1780,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -1599,11 +1798,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "0x0"
+					"DRG",
+					"SOP",
+					"SR1",
+					"0x0"
 				],
 				"modify_flags": [
-					"ZF",  "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1618,11 +1822,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "0x0"
+					"DRG",
+					"SOP",
+					"SR1",
+					"0x0"
 				],
 				"modify_flags": [
-					"ZF",  "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1637,11 +1846,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "0x0"
+					"DRG",
+					"SOP",
+					"SR1",
+					"0x0"
 				],
 				"modify_flags": [
-					"ZF",  "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1656,11 +1870,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "0x0"
+					"DRG",
+					"SOP",
+					"SR1",
+					"0x0"
 				],
 				"modify_flags": [
-					"ZF",  "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1675,11 +1894,16 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SOP",
-					"SR1", "0x0"
+					"DRG",
+					"SOP",
+					"SR1",
+					"0x0"
 				],
 				"modify_flags": [
-					"ZF",  "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1694,11 +1918,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1712,11 +1940,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1730,11 +1962,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1748,11 +1984,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1766,11 +2006,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1784,11 +2028,15 @@
 				"length": 6,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"I32"
 				],
 				"modify_flags": [
-					"ZF", "CF", "OF", "NF"
+					"ZF",
+					"CF",
+					"OF",
+					"NF"
 				],
 				"needs_coprocessor": null,
 				"mode": "L0",
@@ -1804,7 +2052,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2048,7 +2297,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2063,7 +2313,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2078,7 +2329,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2093,7 +2345,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2108,7 +2361,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2123,7 +2377,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2138,7 +2393,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2153,7 +2409,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2168,7 +2425,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2183,7 +2441,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2198,7 +2457,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2213,7 +2473,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2228,7 +2489,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2243,7 +2505,8 @@
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SR1"
+					"DRG",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2288,7 +2551,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"DRG", "SR1",
+					"DRG",
+					"SR1",
 					"OF8"
 				],
 				"modify_flags": [],
@@ -2304,7 +2568,8 @@
 				"length": 3,
 				"format": [
 					"OPC",
-					"SR1", "DRG",
+					"SR1",
+					"DRG",
 					"OF8"
 				],
 				"modify_flags": [],
@@ -2320,7 +2585,8 @@
 				"length": 4,
 				"format": [
 					"OPC",
-					"DRG", "0x0",
+					"DRG",
+					"0x0",
 					"OF16"
 				],
 				"modify_flags": [],
@@ -2336,7 +2602,8 @@
 				"length": 4,
 				"format": [
 					"OPC",
-					"SR1", "0x0",
+					"SR1",
+					"0x0",
 					"OF16"
 				],
 				"modify_flags": [],
@@ -2424,12 +2691,13 @@
 				"can_use_with_prefixes": [],
 				"description": "Set IDT - Writes the address in A32 to the IDT register. (ST [IDT], A32)"
 			},
-			"MOVC": {
+			"MOVK": {
 				"opcode": "0x95",
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRC", "SR1"
+					"DRC",
+					"SR1"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2437,14 +2705,15 @@
 				"can_use_with_prefixes": [
 					"REX"
 				],
-				"description": "Move Control - Copies the value of the source register to the destination register. (DRC = SR1)"
+				"description": "Move Control - Move the value from the source register to the destination control register."
 			},
-			"COPC": {
+			"COPK": {
 				"opcode": "0x99",
 				"length": 2,
 				"format": [
 					"OPC",
-					"DRG", "SRC"
+					"DRG",
+					"SRC"
 				],
 				"modify_flags": [],
 				"needs_coprocessor": null,
@@ -2452,7 +2721,7 @@
 				"can_use_with_prefixes": [
 					"REX"
 				],
-				"description": "Copy from Coprocessor - Copies the value from the coprocessor source register to the general-purpose destination register. (DRG = COP SRC)"
+				"description": "Copy from Control - Move the value from the source control register to the destination general purpose register."
 			},
 			"BRK": {
 				"opcode": "0x06",
@@ -2509,7 +2778,7 @@
 			"translate_to": [
 				{
 					"instruction": "PUSH",
-					"operands": ["{ra}"]
+					"operands": [ "{ra}" ]
 				}
 			],
 			"length_after": 2,
@@ -2530,7 +2799,7 @@
 			"translate_to": [
 				{
 					"instruction": "POP",
-					"operands": ["{ra}"]
+					"operands": [ "{ra}" ]
 				}
 			],
 			"length_after": 2,
@@ -2551,7 +2820,7 @@
 			"translate_to": [
 				{
 					"instruction": "PUSH",
-					"operands": ["{rb}"]
+					"operands": [ "{rb}" ]
 				}
 			],
 			"length_after": 2,
@@ -2572,7 +2841,7 @@
 			"translate_to": [
 				{
 					"instruction": "POP",
-					"operands": ["{rb}"]
+					"operands": [ "{rb}" ]
 				}
 			],
 			"length_after": 2,
@@ -2593,7 +2862,7 @@
 			"translate_to": [
 				{
 					"instruction": "PUSH",
-					"operands": ["{rc}"]
+					"operands": [ "{rc}" ]
 				}
 			],
 			"length_after": 2,
@@ -2614,7 +2883,7 @@
 			"translate_to": [
 				{
 					"instruction": "POP",
-					"operands": ["{rc}"]
+					"operands": [ "{rc}" ]
 				}
 			],
 			"length_after": 2,
@@ -2635,7 +2904,7 @@
 			"translate_to": [
 				{
 					"instruction": "PUSH",
-					"operands": ["{rd}"]
+					"operands": [ "{rd}" ]
 				}
 			],
 			"length_after": 2,
@@ -2656,7 +2925,7 @@
 			"translate_to": [
 				{
 					"instruction": "POP",
-					"operands": ["{rd}"]
+					"operands": [ "{rd}" ]
 				}
 			],
 			"length_after": 2,
@@ -2677,7 +2946,7 @@
 			"translate_to": [
 				{
 					"instruction": "PUSH",
-					"operands": ["{ri}"]
+					"operands": [ "{ri}" ]
 				}
 			],
 			"length_after": 2,
@@ -2698,7 +2967,7 @@
 			"translate_to": [
 				{
 					"instruction": "POP",
-					"operands": ["{ri}"]
+					"operands": [ "{ri}" ]
 				}
 			],
 			"length_after": 2,
@@ -2719,7 +2988,7 @@
 			"translate_to": [
 				{
 					"instruction": "PUSH",
-					"operands": ["{bp}"]
+					"operands": [ "{bp}" ]
 				}
 			],
 			"length_after": 2,
@@ -2740,7 +3009,7 @@
 			"translate_to": [
 				{
 					"instruction": "POP",
-					"operands": ["{bp}"]
+					"operands": [ "{bp}" ]
 				}
 			],
 			"length_after": 2,
@@ -2759,7 +3028,7 @@
 			"translate_to": [
 				{
 					"instruction": "MOV",
-					"operands": ["bp", "sp"]
+					"operands": [ "bp", "sp" ]
 				}
 			],
 			"length_after": 2,
@@ -2778,7 +3047,7 @@
 			"translate_to": [
 				{
 					"instruction": "MOV",
-					"operands": ["sp", "bp"]
+					"operands": [ "sp", "bp" ]
 				}
 			],
 			"length_after": 2,
@@ -2790,11 +3059,15 @@
 			"length": 3,
 			"format": [
 				"OPC",
-				"DRG", "SR1",
+				"DRG",
+				"SR1",
 				"IM8"
 			],
 			"modify_flags": [
-				"ZF", "CF", "OF", "NF"
+				"ZF",
+				"CF",
+				"OF",
+				"NF"
 			],
 			"needs_coprocessor": null,
 			"mode": "L0",
@@ -2804,7 +3077,7 @@
 			"translate_to": [
 				{
 					"instruction": "SHL",
-					"operands": ["{DRG}", "{SR1}", "{IM8}"]
+					"operands": [ "{DRG}", "{SR1}", "{IM8}" ]
 				}
 			],
 			"length_after": 3,
@@ -2817,15 +3090,26 @@
 				"length": 1,
 				"mnemonic": "REX.XT",
 				"format": [
-					"1", "1", "1", "0", ["DRG", "SR1", "SR2", "SR3"]
+					"1",
+					"1",
+					"1",
+					"0",
+					[ "DRG", "SR1", "SR2", "SR3" ]
 				],
 				"description": "Register Extension Prefix - if any bits in the REX prefix are set, the instruction extends that register fields to allow access 0-15 -> 16-31 of the 32-bit general-purpose registers, or f0-f15 -> d0-d15 of the"
 			},
 			"BRH_H": {
 				"length": 1,
-				"mnemonic": ["BRH_H.NT", "BRH_H.T"],
+				"mnemonic": [ "BRH_H.NT", "BRH_H.T" ],
 				"format": [
-					"1", "1", "1", "1", "0", "0", "1", ["BHT"]
+					"1",
+					"1",
+					"1",
+					"1",
+					"0",
+					"0",
+					"1",
+					[ "BHT" ]
 				],
 				"description": "Branch Hint Prefix - provides a hint to the processor about the likely direction of a branch instruction to optimize instruction pipelining. Must be used before a branch instruction, or the hint is ignored. It modifies the BH bit in the instruction to indicate whether the branch is likely to be taken or not taken."
 			},
@@ -2833,7 +3117,14 @@
 				"length": 1,
 				"mnemonic": "LOCK",
 				"format": [
-					"1", "1", "1", "1", "0", "1", "0", "0"
+					"1",
+					"1",
+					"1",
+					"1",
+					"0",
+					"1",
+					"0",
+					"0"
 				],
 				"description": "Lock Prefix - ensures exclusive access to shared memory in multi-processor environments by preventing other processors from accessing the memory location being modified until the operation is complete."
 			},
@@ -2841,7 +3132,14 @@
 				"length": 1,
 				"mnemonic": "ISL.L",
 				"format": [
-					"1", "1", "0", "1", ["ISL"], ["ISL"], ["ISL"], ["ISL"]
+					"1",
+					"1",
+					"0",
+					"1",
+					[ "ISL" ],
+					[ "ISL" ],
+					[ "ISL" ],
+					[ "ISL" ]
 				],
 				"description": "Instruction Specific Length Prefix - specifies the length of the instruction in bytes, from 4 to 16 bytes. Values 0-3 are invalid. This prefix may improve performance by allowing the processor to decode the instruction faster."
 			},
@@ -2849,7 +3147,14 @@
 				"length": 1,
 				"mnemonic": "XTU.EN",
 				"format": [
-					"1", "1", "1", "1", "0", "1", "0", "1"
+					"1",
+					"1",
+					"1",
+					"1",
+					"0",
+					"1",
+					"0",
+					"1"
 				],
 				"description": "Extended Instruction Unit Prefix - the following instruction is executed in XTU."
 			},
@@ -2857,7 +3162,14 @@
 				"length": 1,
 				"mnemonic": "BMU.EN",
 				"format": [
-					"1", "1", "1", "1", "0", "1", "1", "0"
+					"1",
+					"1",
+					"1",
+					"1",
+					"0",
+					"1",
+					"1",
+					"0"
 				],
 				"description": "Big Math Unit Prefix - the following instruction is executed in BMU."
 			},
@@ -2865,7 +3177,14 @@
 				"length": 1,
 				"mnemonic": null,
 				"format": [
-					"1", "1", "1", "1", "0", "0", "0", "0"
+					"1",
+					"1",
+					"1",
+					"1",
+					"0",
+					"0",
+					"0",
+					"0"
 				],
 				"description": "Double Byte Instruction Prefix - escape byte to allow the use of 2-byte instructions."
 			},
@@ -2873,7 +3192,14 @@
 				"length": 1,
 				"mnemonic": null,
 				"format": [
-					"1", "1", "1", "1", "0", "0", "0", "1"
+					"1",
+					"1",
+					"1",
+					"1",
+					"0",
+					"0",
+					"0",
+					"1"
 				],
 				"description": "Triple Byte Instruction Prefix - escape byte to allow the use of 3-byte instructions."
 			},
@@ -2881,7 +3207,14 @@
 				"length": 1,
 				"mnemonic": "SIG",
 				"format": [
-					"1", "1", "1", "1", "1", "1", "1", "0"
+					"1",
+					"1",
+					"1",
+					"1",
+					"1",
+					"1",
+					"1",
+					"0"
 				],
 				"description": "Sign Prefix - the following instruction is allowed to set the flag."
 			}
@@ -2891,8 +3224,8 @@
 			"BRH_H",
 			"LOCK",
 			"REX",
-			["XTU", "BMU"],
-			["DBI", "TBI"],
+			[ "XTU", "BMU" ],
+			[ "DBI", "TBI" ],
 			"SIG",
 			"OPC"
 		],
@@ -3113,13 +3446,11 @@
 		}
 	},
 	"status_flags": {
-
 		"PROT": {
 			"bit_position": 16,
 			"mask": "0x00010000",
 			"description": "Protected mode Flag - If flag enabled, the processor will abort when operating a invalid memory address or other operations."
 		}
-
 	},
 	"architecture": {
 		"name": "Hayneko_Arch32S",
@@ -3140,7 +3471,22 @@
 			"memory_size": 4294967296,
 			"instruction_length_type": "float",
 			"instruction_length": [
-				1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
 			],
 			"floating_point_format": "IEEE 754",
 			"floating_point_precision": "single precision (32-bit) and double precision (64-bit)"
@@ -3533,17 +3879,43 @@
 		"format": {
 			"interger_return_value_register": "ra",
 			"interger_register_parameters": [
-				"rb", "rd", "ri", "r8", "r9", "r10", "r11", "r12"
+				"rb",
+				"rd",
+				"ri",
+				"r8",
+				"r9",
+				"r10",
+				"r11",
+				"r12"
 			],
 			"floating_point_return_value_register": [
-				"f0", "d0"
+				"f0",
+				"d0"
 			],
 			"floating_point_register_parameters": [
-				"f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8",
-				"d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8"
+				"f1",
+				"f2",
+				"f3",
+				"f4",
+				"f5",
+				"f6",
+				"f7",
+				"f8",
+				"d1",
+				"d2",
+				"d3",
+				"d4",
+				"d5",
+				"d6",
+				"d7",
+				"d8"
 			],
 			"system_call_parameters": [
-				"ra", "rc", "r13", "r14", "r15"
+				"ra",
+				"rc",
+				"r13",
+				"r14",
+				"r15"
 			]
 		}
 	}

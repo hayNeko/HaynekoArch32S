@@ -11,7 +11,6 @@ IP::IP( addr ip_addr ) {
 	this->ip = ip_addr;
 }
 
-
 void IP::modIp( addr ip_addr ) {
 	this->ip = ip_addr;
 }
@@ -25,7 +24,7 @@ GPR::GPR() {
 void GPR::writeReg( byte reg_num, dword data ) {
 	if ( reg_num < 0 || reg_num >= 32 )
 		throw std::out_of_range( "Invalid register number" );
-	
+
 	this->regs[reg_num] = data;
 }
 
@@ -35,7 +34,6 @@ dword GPR::readReg( byte reg_num ) const {
 
 	return this->regs[reg_num];
 }
-
 
 CR::CR() {
 	for ( int i = 0; i <= 3; ++i ) crs[i] = 0;

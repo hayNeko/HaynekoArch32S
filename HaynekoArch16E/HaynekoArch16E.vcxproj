@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vmcore\vmboot\vminit.cpp" />
-    <ClCompile Include="vmcore\vmcore.cpp" />
     <ClCompile Include="vmcore\cpu\vmcpu.cpp" />
     <ClCompile Include="vmcore\cpu\vmflag.cpp" />
     <ClCompile Include="vmcore\cpu\vminst.cpp" />
@@ -33,11 +32,13 @@
   <ItemGroup>
     <ClInclude Include="h\cpu\vminst.hpp" />
     <ClInclude Include="h\cpu\vminstprefix.hpp" />
+    <ClInclude Include="h\cpu\vmport.hpp" />
     <ClInclude Include="h\general.hpp" />
     <ClInclude Include="h\cpu\vmflag.hpp" />
     <ClInclude Include="h\cpu\vminstphsr.hpp" />
     <ClInclude Include="h\cpu\vmmem.hpp" />
     <ClInclude Include="h\cpu\vmreg.hpp" />
+    <ClInclude Include="h\vm.hpp" />
     <ClInclude Include="h\vmboot\vminit.hpp" />
   </ItemGroup>
   <ItemGroup>

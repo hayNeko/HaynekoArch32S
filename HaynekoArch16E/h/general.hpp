@@ -1,5 +1,8 @@
-#ifndef __H_GENERAL__
-#define __H_GENERAL__
+// general header for HA32S visual machine.
+// copyright (c) 2026, hayNeko
+
+#ifndef HA32S_H_GENERAL_
+#define HA32S_H_GENERAL_
 
 #include <iostream>
 #include <string>
@@ -7,24 +10,23 @@
 #define VM_VERSION 3
 
 // status code
-constexpr int VM_PROCESS_EXIT_CODE_SUCCESS = 0;
-constexpr int VM_PROCESS_EXIT_CODE_FAILURE = 1;
-constexpr int VM_PROCESS_EXIT_CODE_ABORT = 2;
-constexpr int VM_INPUT_EXECUTABLE_CANNOT_FIND = 3;
-constexpr int VM_INPUT_EXECUTABLE_CANNOT_OPEN = 4;
-constexpr int VM_INPUT_EXECUTABLE_INVALID_FORMAT = 5;
-constexpr int VM_RUNTIME_EXTERNAL_INTERRUPT = 7;
-constexpr int VM_RUNTIME_MEMORY_OVERFLOW = 8;
-constexpr int VM_RUNTIME_INVALID_INSTRUCTION = 9;
-constexpr int VM_RUNTIME_INVALID_MEMORY_ACCESS = 10; // only in PROTECTION_MODE
-constexpr int VM_RUNTIME_DEREFERENCE_NULL_POINTER = 11; // only in PROTECTION_MODE
-constexpr int VM_RUNTIME_DIVISION_BY_ZERO = 12;
-constexpr int VM_DIE = -1;
+constexpr int VM_PROCESS_EXIT_CODE_SUCCESS           = 0;
+constexpr int VM_PROCESS_EXIT_CODE_FAILURE           = 1;
+constexpr int VM_PROCESS_EXIT_CODE_ABORT             = 2;
+constexpr int VM_INPUT_EXECUTABLE_CANNOT_FIND        = 3;
+constexpr int VM_INPUT_EXECUTABLE_CANNOT_OPEN        = 4;
+constexpr int VM_INPUT_EXECUTABLE_INVALID_FORMAT     = 5;
+constexpr int VM_RUNTIME_EXTERNAL_INTERRUPT          = 7;
+constexpr int VM_RUNTIME_MEMORY_OVERFLOW             = 8;
+constexpr int VM_RUNTIME_INVALID_INSTRUCTION         = 9;
+constexpr int VM_RUNTIME_INVALID_MEMORY_ACCESS       = 10; // only in PROTECTION_MODE
+constexpr int VM_RUNTIME_DEREFERENCE_NULL_POINTER    = 11; // only in PROTECTION_MODE
+constexpr int VM_RUNTIME_DIVISION_BY_ZERO            = 12;
+constexpr int VM_DIE                                 = -1;
 
-
-#define print(msg) std::cout << "[General] " << (msg) << std::endl;
-#define warn(msg)  std::cout << "[Warning] " << (msg) << std::endl;
-#define error(msg) std::cerr << "[Error] " << (msg) << std::endl;
+#define println(msg) std::cout << "[General] " << (msg) << std::endl;
+#define warnln(msg)  std::cout << "[Warning] " << (msg) << std::endl;
+#define errorln(msg) std::cerr << "[Error] " << (msg) << std::endl;
 
 // macro
 
@@ -33,7 +35,7 @@ constexpr int VM_DIE = -1;
 
 #define VMENDIAN_LITTLE
 
-#define ALPHA
+#define VER_ALPHA
 
 // end macro
 
@@ -45,15 +47,16 @@ typedef signed char            sbyte;
 typedef signed short           sword;
 typedef signed int             sdword; // or just int
 typedef signed long long       sqword;
+typedef int                     rtrnval;
 
-constexpr byte  BYTE_RANGE    = 0xFF;
-constexpr word  WORD_RANGE    = 0xFFFF;
-constexpr dword DWORD_RANGE   = 0xFFFFFFFF;
-constexpr qword QWORD_RANGE   = 0xFFFFFFFFFFFFFFFF;
-constexpr byte  BYTE_SIGN     = 0x80;
-constexpr word  WORD_SIGN     = 0x8000;
-constexpr dword DWORD_SIGN    = 0x80000000;
-constexpr qword QWORD_SIGN    = 0x8000000000000000;
+constexpr byte  BYTE_RANGE  = 0xFF;
+constexpr word  WORD_RANGE  = 0xFFFF;
+constexpr dword DWORD_RANGE = 0xFFFFFFFF;
+constexpr qword QWORD_RANGE = 0xFFFFFFFFFFFFFFFF;
+constexpr byte  BYTE_SIGN   = 0x80;
+constexpr word  WORD_SIGN   = 0x8000;
+constexpr dword DWORD_SIGN  = 0x80000000;
+constexpr qword QWORD_SIGN  = 0x8000000000000000;
 
 // placeholder arguments for override functions
 /*
@@ -61,11 +64,10 @@ char Function(int arg1, char) return (char)1; <- Function(1, CHAR_ARGV) to get c
 int Function(int arg1, int) return (int)1;    <- Function(1, INT_ARGV) to get int return value
 */
 
-constexpr byte  BYTE_ARGV     = 0x0F;
-constexpr word  WORD_ARGV     = 0x0F0F;
-constexpr dword DWORD_ARGV    = 0x0F0F0F0F;
-constexpr qword QWORD_ARGV    = 0x0F0F0F0F0F0F0F0F;
-
+constexpr byte  BYTE_ARGV  = 0x0F;
+constexpr word  WORD_ARGV  = 0x0F0F;
+constexpr dword DWORD_ARGV = 0x0F0F0F0F;
+constexpr qword QWORD_ARGV = 0x0F0F0F0F0F0F0F0F;
 
 typedef dword                   maxsize;
 
@@ -73,13 +75,15 @@ typedef byte                    regb;
 typedef word                    regw;
 typedef dword                   regd;
 typedef qword                   regq;
+typedef byte                    regid;
 
 typedef dword                   ctrlreg;
+typedef byte                    crid;
 
 typedef word                    addrw;
 typedef dword                   addr;
 
-typedef byte                    port;
+typedef byte                    portid;
 
 typedef sbyte                   dispb;
 typedef sword                   dispw;
@@ -94,7 +98,6 @@ typedef qword                   immq;
 typedef dword                   flag;
 
 typedef byte                    factor;
-
 
 // ### FUNCTIONS ###
 // truncation
@@ -128,16 +131,19 @@ inline byte truncateWord( word val ) {
 inline qword signExtendD2Q( dword val ) {
 	if ( val & DWORD_SIGN )
 		return val | 0xFFFFFFFF80000000;
+	return (qword) val;
 }
 
 inline dword signExtendW2D( word val ) {
 	if ( val & WORD_SIGN )
 		return val | 0xFFFF8000;
+	return (dword) val;
 }
 
 inline dword signExtendB2D( byte val ) {
 	if ( val & BYTE_SIGN )
 		return val | 0xFFFFFF80;
+	return (dword) val;
 }
 
 // bit set/clear
@@ -163,7 +169,7 @@ inline void toggleBit( dword &res, byte bit_pos ) {
 inline dword random( dword seed ) {
 	dword ans = ( seed ^ 0x39DF307E + 1 ) >> ( seed & 0x07 + 1 );
 	for ( byte i = 0; i <= ( (byte)( seed ^ 0x39 ) ); ++i ) {
-		ans ^= ( ~( i << 2 ) + 0x16 ) * ( (i << 2) + 1 ) - ( ( i << 8 ) | ( seed % 16 ) );
+		ans ^= ( ~( i << 2 ) + 0x16 ) * ( ( i << 2 ) + 1 ) - ( ( i << 8 ) | ( seed % 16 ) );
 		ans += (dword)( ~( seed & 0x3900005B - i * 8 ) >> 3 );
 	}
 	return ans;
@@ -177,5 +183,4 @@ inline dword randoms( dword seed, byte times ) {
 	return ans;
 }
 
-
-#endif // __H_GENERAL__
+#endif // HA32S_H_GENERAL_

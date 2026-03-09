@@ -3,7 +3,7 @@
 #include "h/general.hpp"
 #include "cpu/vmmem.hpp"
 
-VMMem::VMMem(dword mem_size) : mem_size(mem_size)  {
+VMMem::VMMem( dword mem_size ): mem_size( mem_size ) {
 	#ifndef VMMEM_CREATE_NO_WARNING
 	if ( mem_size >= 1048576 )
 		warn( "VMMem size is too large, it may cause performance issues" );
@@ -59,7 +59,6 @@ void VMMem::writed( addr address, dword data ) {
 	mem_ptr[address + 2] = static_cast<byte>( data >> 8 );
 	mem_ptr[address + 3] = static_cast<byte>( data );
 	#endif
-
 }
 
 void VMMem::writew( addr address, word data ) {
@@ -155,4 +154,3 @@ byte VMMem::readb( addr address ) {
 
 	return static_cast<byte>( mem_ptr[address] );
 }
-

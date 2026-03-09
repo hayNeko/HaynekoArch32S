@@ -7,12 +7,10 @@
 
 /* arg0: is_protected mode (0: default disable, 1: enable)
 
-
-
 */
 int main( int argc, char *argv[] ) {
-	#ifdef ALPHA
-	std::cout << "This is Alpha version." << std::endl;
+	#ifdef VER_ALPHA
+	println( "This is a alpha version." );
 	#endif
 
 	// init vmcore with default values
