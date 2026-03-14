@@ -3,9 +3,9 @@
 
 #include "h/general.hpp"
 
-class Port {
+class VMPort {
 public:
-	Port();
+	VMPort();
 
 	dword readPort( portid port ) const;
 	void writePort( portid port, dword value );

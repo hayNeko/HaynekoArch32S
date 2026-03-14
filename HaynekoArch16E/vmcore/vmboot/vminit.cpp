@@ -7,4 +7,4 @@
 #include "cpu/vmflag.hpp"
 #include "cpu/vmreg.hpp"
 #include "cpu/vmmem.hpp"
-#include "cpu/vminstphsr.hpp"
+#include "cpu/vminstpsr.hpp"

@@ -4,7 +4,9 @@
 #include "general.hpp"
 #include "cpu/vmreg.hpp"
 #include "cpu/vminst.hpp"
-#include "cpu/vminstphsr.hpp"
+#include "cpu/vminstpsr.hpp"
+#include "cpu/vminstprefix.hpp"
+#include "cpu/vmport.hpp"
 #include "cpu/vmmem.hpp"
 
 class VM {
@@ -35,9 +37,10 @@ public:
 	void writeMemory( addr addr, byte value );
 
 	dword stpop();
+	void stpop3(); // Reg *reg1, etc..
 	void stpush( regid reg );
 	void stpush3( regid reg, regid reg2, regid reg3 );
-	void stpush( immd imm );
+	void stpush( immd imm, dword );
 	void stpush( addr addr );
 
 	void interrupt( byte vector );
@@ -49,8 +52,16 @@ public:
 	void out( portid port, dword value );
 
 
-private:
+	VMGPR registers;
+	VMFloatReg float_registers;
+	VMDoubleReg double_registers;
+	VMPort ports;
+	VMCR control_registers;
+	VMMem memory;
+	VMIP instruction_pointer;
+	VMFlag flags;
 
+	
 };
 
 #endif // HA32S_H_VM_

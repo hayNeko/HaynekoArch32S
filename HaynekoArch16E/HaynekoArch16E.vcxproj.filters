@@ -33,13 +33,16 @@
     <ClCompile Include="vmcore\cpu\vmcpu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vmcore\cpu\vminstphsr.cpp">
+    <ClCompile Include="vmcore\cpu\vminstpsr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="vmcore\cpu\vmflag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="vmcore\vmboot\vminit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vmcore\vm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +56,7 @@
     <ClInclude Include="h\cpu\vmmem.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="h\cpu\vminstphsr.hpp">
+    <ClInclude Include="h\cpu\vminstpsr.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="h\cpu\vmflag.hpp">

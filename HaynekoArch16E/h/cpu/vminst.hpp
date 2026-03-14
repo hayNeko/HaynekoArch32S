@@ -8,7 +8,7 @@
 
 class VM;
 
-class Inst {
+class VMInst {
 public:
 
 	// some of the instruction will modify the dstreg. ( dstreg OP= srcreg, but not dstreg = srcreg OP srcreg2 )
@@ -127,7 +127,7 @@ public:
 	static void shl( VM &vm, regid dstreg, regid srcreg, immb imm );
 	static void shr( VM &vm, regid dstreg, regid srcreg, immb imm );
 	static void clr_ra( VM &vm );
-	static void copyip( VM &vm );
+	static void copyip( VM &vm, regid dstreg );
 	static void xchg( VM &vm, regid dstreg, regid srcreg );
 	static void sar( VM &vm, regid dstreg, regid srcreg, immb imm );
 	static void rol( VM &vm, regid dstreg, regid srcreg, immb imm );

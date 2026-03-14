@@ -19,9 +19,10 @@ public:
 	void writeb( addr address, byte data );
 
 	qword readq( addr address );
-	dword readd( addr address );
-	word readw( addr address );
-	byte readb( addr address );
+	qword readq( addr address ) const;
+	dword readd( addr address ) const;
+	word readw( addr address ) const;
+	byte readb( addr address ) const;
 
 protected:
 	byte *mem_ptr;

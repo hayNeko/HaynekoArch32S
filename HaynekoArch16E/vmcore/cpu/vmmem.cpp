@@ -83,7 +83,7 @@ void VMMem::writeb( addr address, byte data ) {
 	mem_ptr[address] = static_cast<byte>( data );
 }
 
-qword VMMem::readq( addr address ) {
+qword VMMem::readq( addr address ) const {
 	// bounds check
 	if ( address + 7 >= mem_size )
 		throw std::out_of_range( "VMMem::readq address out of range" );
@@ -111,7 +111,7 @@ qword VMMem::readq( addr address ) {
 	#endif
 }
 
-dword VMMem::readd( addr address ) {
+dword VMMem::readd( addr address ) const {
 	// bounds check
 	if ( address + 3 >= mem_size )
 		throw std::out_of_range( "VMMem::readd address out of range" );
@@ -131,7 +131,7 @@ dword VMMem::readd( addr address ) {
 	#endif
 }
 
-word VMMem::readw( addr address ) {
+word VMMem::readw( addr address ) const {
 	// bounds check
 	if ( address + 1 >= mem_size )
 		throw std::out_of_range( "VMMem::readw address out of range" );
@@ -147,7 +147,7 @@ word VMMem::readw( addr address ) {
 	#endif
 }
 
-byte VMMem::readb( addr address ) {
+byte VMMem::readb( addr address ) const {
 	// bounds check
 	if ( address >= mem_size )
 		throw std::out_of_range( "VMMem::readb address out of range" );

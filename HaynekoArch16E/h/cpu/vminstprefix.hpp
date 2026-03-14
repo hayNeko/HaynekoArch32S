@@ -3,7 +3,7 @@
 
 #include "general.hpp"
 
-class Prefix {
+class VMInstPrefix {
 public:
 };
 

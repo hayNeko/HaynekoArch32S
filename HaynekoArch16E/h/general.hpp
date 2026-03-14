@@ -24,10 +24,6 @@ constexpr int VM_RUNTIME_DEREFERENCE_NULL_POINTER    = 11; // only in PROTECTION
 constexpr int VM_RUNTIME_DIVISION_BY_ZERO            = 12;
 constexpr int VM_DIE                                 = -1;
 
-#define println(msg) std::cout << "[General] " << (msg) << std::endl;
-#define warnln(msg)  std::cout << "[Warning] " << (msg) << std::endl;
-#define errorln(msg) std::cerr << "[Error] " << (msg) << std::endl;
-
 // macro
 
 #define VMCPU_DISABLE_PROTECTION_MODE
@@ -100,6 +96,19 @@ typedef dword                   flag;
 typedef byte                    factor;
 
 // ### FUNCTIONS ###
+inline void println( const std::string &msg ) {
+	std::cout << msg << std::endl;
+}
+
+inline void logln( const std::string &msg ) {
+	std::cout << "[LOG] " << msg << std::endl;
+}
+
+inline void errorln( const std::string &msg ) {
+	std::cerr << "[ERROR] " << msg << std::endl;
+}
+
+
 // truncation
 
 inline dword truncateQ2D( qword val ) {
@@ -167,9 +176,9 @@ inline void toggleBit( dword &res, byte bit_pos ) {
 // tool
 
 inline dword random( dword seed ) {
-	dword ans = ( seed ^ 0x39DF307E + 1 ) >> ( seed & 0x07 + 1 );
+	dword ans = ( seed ^ 0x39DF307E ) >> ( seed & 0x07 );
 	for ( byte i = 0; i <= ( (byte)( seed ^ 0x39 ) ); ++i ) {
-		ans ^= ( ~( i << 2 ) + 0x16 ) * ( ( i << 2 ) + 1 ) - ( ( i << 8 ) | ( seed % 16 ) );
+		ans ^= ( ~( i << 2 ) + 0x16 ) * ( ( i << 2 ) + i ) - ( ( i << 8 ) | ( seed % 16 ) );
 		ans += (dword)( ~( seed & 0x3900005B - i * 8 ) >> 3 );
 	}
 	return ans;
@@ -177,7 +186,7 @@ inline dword random( dword seed ) {
 
 inline dword randoms( dword seed, byte times ) {
 	dword ans = 0;
-	for ( byte i = 0; i <= times + 1; ++i ) {
+	for ( byte i = 0; i <= times; ++i ) {
 		ans += random( seed );
 	}
 	return ans;

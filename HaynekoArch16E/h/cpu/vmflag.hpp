@@ -3,7 +3,7 @@
 
 #include "general.hpp"
 
-class Flag {
+class VMFlag {
 public:
 	enum TYPE: byte {
 		Z, C, O, N,
@@ -42,7 +42,7 @@ private:
 	flag flag;
 
 public:
-	Flag(): flag( 0 ) {}
+	VMFlag(): flag( 0 ) {}
 
 	void set( TYPE flag );
 	void clear( TYPE flag );
